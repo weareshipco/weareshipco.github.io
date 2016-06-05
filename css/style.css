@@ -136,23 +136,24 @@ color: #fff;
 }
 
 
-.link{
+.link {
+    padding: 0 !important;
     height: 50px;
     text-align: center;
-	background:#f2a81d;
-	color:#fff !important;
-	font-size:20px;
-	font-weight:100;
-	font-family: 'Poppins', sans-serif;
-	display:inline-block;
-	text-transform:uppercase;
-	line-height:50px;
-	margin-bottom:20px;
+    background:#f2a81d;
+    color:#fff !important;
+    font-size:20px !important;
+    font-weight:100;
+    font-family: 'Poppins', sans-serif;
+    display:inline-block;
+    text-transform:uppercase;
+    line-height:50px;
+    margin-bottom:20px;
     width: 200px;
     letter-spacing: 0.5px;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
 }
 .link:hover {
 	text-decoration:none;
@@ -417,7 +418,7 @@ textarea {
     border-radius: 0 !important;
 }
 
-.input-text{
+.input-text {
 	padding:15px 16px;
 	border-bottom:1px solid #ccc;
 	width:100%;
@@ -459,7 +460,7 @@ textarea {
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
     border-radius: 0 !important;
-
+    border: none;
 }
 
 .input-btn:hover{
@@ -477,8 +478,8 @@ textarea {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -webkit-animation: backgroundScroll 50s linear infinite;
-    animation: backgroundScroll 50s linear infinite;
+    -webkit-animation: backgroundScroll 150s linear infinite;
+    animation: backgroundScroll 150s linear infinite;
     text-align: center;
 }
  
