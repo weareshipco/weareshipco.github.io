@@ -357,12 +357,12 @@ img {
 	overflow:hidden;
 }
 .social-link{
+    clear: both;
 	padding:0;
-	margin:0;
 	display:block;
 	overflow:hidden;
 	list-style:none;
-    margin: 110px auto -110px;
+    margin: 0 0 -100px;
     text-align: center;
 }
 .social-link li{
@@ -506,7 +506,7 @@ textarea {
 
 .copyright {
     padding: 30px 0;
-    margin-top:120px;
+    margin-top:90px;
 }
 
 .copyright h1 {
@@ -598,14 +598,14 @@ textarea {
     width:100%;
     min-height:200px;
     background-color: #00C4E3;
-    margin-top:-80px;
+    margin-top:-70px;
     z-index:-999;
 }
 
 .wave{
   background:#fff;
   display:inline-block;
-  height:100%;
+  height:60%;
   width:10px;
   position:absolute;
   -webkit-animation-name:             dostuff; 
