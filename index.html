@@ -43,9 +43,9 @@
         <figure class="waves">
             <img src="img/zigzag.svg" alt="waves"/>
         </figure>
-        <h1><span class="shipco">SHIP.CO</span><span class="animated fadeInDown delay-07s"> is a design agency based in <span class="rotate">sunny, crazy, creative, humid, expensive, fast paced, delicious, friendly</span> Singapore</span></h1>
+        <h1><span class="shipco">SHIP.CO</span><span class="animated fadeInDown delay-07s"> is a design agency based in <span class="rotate">sunny, crazy, creative, humid, expensive, fast paced, delicious, friendly</span> Singapore.</span></h1>
         <h1 class="we-create animated fadeInDown delay-07s">
-        	We ship intricately crafted graphic & digital designs
+        	We ship intricately crafted graphic & digital designs.
         </h1>
         <figure class="waves">
             <img src="img/zigzag.svg" alt="waves"/>
@@ -117,7 +117,7 @@
         Do you have an exciting project brewing in your mind or  looking to join our fantastic crew? Drop us a line, set sail with us!
     </h1>
     <div class="row">
-        <div class="col-lg-8 col-sm-8 wow fadeInUp delay-05s">
+        <div class="col-lg-8 col-sm-8 wow fadeInUp delay-01s">
             <div class="form">
                 <input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
                 <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
@@ -132,12 +132,21 @@
 </section>
 </div>
     
-<footer class="footer">
+<div class="container footer-logo" style="position:absolute;z-index:999;right:0;margin-top:-50px;">
+    <figure class="footer-logo">
+        <img src="img/logo.png" alt="logo"/>
+    </figure>
+</div>
+    
+<div id="ocean">
     <ul class="social-link">
         <li class="linkedin"><a href="#" class="linkedin"></a></li>
         <li class="instagram"><a href="#" class="instagram"></a></li>
         <li class="mailto"><a href="#" class="mailto"></a></li>
     </ul>
+</div>
+    
+<footer class="footer">
 </footer>
 <div class="container">
     <div class="copyright">
@@ -196,6 +205,23 @@
       separator: ",",
       speed: 2000
     });    
+</script>
+<script>
+// make some waves.
+var ocean = document.getElementById("ocean"),
+    waveWidth = 10,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
+
+for(var i = 0; i < waveCount; i++){
+  var wave = document.createElement("div");
+  wave.className += " wave";
+  docFrag.appendChild(wave);
+  wave.style.left = i * waveWidth + "px";
+  wave.style.webkitAnimationDelay = (i/100) + "s";
+}
+
+ocean.appendChild(docFrag);    
 </script>
 </body>
 </html>

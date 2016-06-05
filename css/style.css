@@ -260,7 +260,6 @@ span.shipco {
 
 .portfolioContainer{
 	margin:0 auto;
-	padding-left:15px;
 }
 
 .Portfolio-box{
@@ -328,7 +327,7 @@ img {
 ---------------------------------*/
 .main-section.contact{
 	padding:0;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .contact-info-box{
@@ -363,6 +362,8 @@ img {
 	display:block;
 	overflow:hidden;
 	list-style:none;
+    margin: 110px auto -110px;
+    text-align: center;
 }
 .social-link li{
 	display:inline-block;
@@ -407,7 +408,8 @@ img {
 }
 
 .form{
-	margin:66px 66px 0 30px !important;
+	margin:100px 0 0 10px!important;
+    width: 400px;
 }
 
 input,
@@ -470,15 +472,25 @@ textarea {
 /* Footer
 ---------------------------------*/
 
+.footer-logo {
+    width: 70px;
+    height: 40px;
+    float: right;
+    margin-bottom: 20px;
+}
+
 .footer{
+    clear: both;
     width: 100%;
     height: 100px;
+/*
     background: url('/img/wave-footer.svg') repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -webkit-animation: backgroundScroll 150s linear infinite;
     animation: backgroundScroll 150s linear infinite;
+*/
     text-align: center;
 }
  
@@ -494,6 +506,7 @@ textarea {
 
 .copyright {
     padding: 30px 0;
+    margin-top:20px;
 }
 
 .copyright h1 {
@@ -578,6 +591,42 @@ textarea {
 	-webkit-animation-delay: 1.2s; 
 }
 
+/* == Ocean == */
+
+#ocean{
+    position: absolute;
+    width:100%;
+    min-height:200px;
+    background-color: #00C4E3;
+    margin-top:-80px;
+    z-index:-999
+}
+
+.wave{
+  background:#fff;
+  display:inline-block;
+  height:60%;
+  width:10px;
+  position:absolute;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
+}
+
 /* == Media Queries == */
 
 
@@ -596,10 +645,12 @@ textarea {
 
 @media only screen and (max-width: 767px) {
 	/****Mobile Landscape 480 Container 100% ****/
-	
 }
 
 @media only screen and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
+    .Portfolio-box {
+        width: 100%;
+    }
 	
 }
