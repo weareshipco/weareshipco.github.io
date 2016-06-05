@@ -137,14 +137,14 @@ color: #fff;
 
 
 .link{
-	padding:15px 35px;
+    height: 50px;
+    text-align: center;
 	background:#f2a81d;
 	color:#fff !important;
 	font-size:20px;
 	font-weight:100;
 	font-family: 'Poppins', sans-serif;
 	display:inline-block;
-	border-radius:3px;
 	text-transform:uppercase;
 	line-height:50px;
 	margin-bottom:20px;
@@ -414,6 +414,7 @@ input,
 textarea {
     border-style: hidden;
     border-bottom: 1px solid #b0b0b0;
+    border-radius: 0 !important;
 }
 
 .input-text{
@@ -429,6 +430,8 @@ textarea {
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
+    border-radius: 0 !important;
+
 }
 .input-text:focus {
     color: #e78282;
@@ -455,6 +458,8 @@ textarea {
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
+    border-radius: 0 !important;
+
 }
 
 .input-btn:hover{
