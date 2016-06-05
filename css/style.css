@@ -54,7 +54,7 @@ body {
 	margin:0;
 }
 h2{
-	font-size:26px;
+	font-size:20px;
 	color:#222222;
 	font-family: 'Poppins', sans-serif;
 	font-weight:700;
@@ -90,7 +90,7 @@ p{
 .header{
 	text-align:left;
 	background:#fff;
-	padding:200px 0;
+	padding:100px 0;
 }
 .logo{
 	width:70px;
@@ -99,7 +99,7 @@ p{
 }
 .header h1 {
 	font-family: 'Poppins',sans-serif;
-	font-size:26px;
+	font-size:20px;
 	font-weight:100;
 	letter-spacing: 0.2px;
 	margin:0;
@@ -171,7 +171,7 @@ span.shipco {
     letter-spacing: -0.25px;
     font-weight: bold;
     color: #1583b6;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .waves {
@@ -265,15 +265,14 @@ span.shipco {
 
 .Portfolio-box{
 	text-align:center;
-	margin-bottom:30px;
+	margin-bottom:0;
 	height:auto;
-	width:33%;
+	width:32%;
 	overflow:hidden;
 	display: inline-block;
 	padding:5px;
 }
-.Portfolio-box img{
-	margin-bottom:5px;
+.Portfolio-box img {
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;	
@@ -317,7 +316,7 @@ img {
 
 .shipco-text {
 	font-family: 'Poppins',sans-serif;
-	font-size:26px;
+	font-size:20px;
 	font-weight:100;
 	letter-spacing: 0px;
     line-height: 1.4;
@@ -500,7 +499,7 @@ textarea {
 .copyright h1 {
     text-align: center;
 	font-family: 'Poppins',sans-serif;
-	font-size:26px;
+	font-size:20px;
 	font-weight:100;
 	letter-spacing: 0.2px;
 	margin:0;
@@ -529,7 +528,7 @@ textarea {
 
 .portfolioContainer{
 	max-width: 1140px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -577,4 +576,30 @@ textarea {
 .delay-12s { 
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
+}
+
+/* == Media Queries == */
+
+
+@media only screen and (min-width: 992px) {
+	/****Ipad Landscape 1024 Container 970 ****/
+	
+	.form{ margin:0 0 0 20px}
+	.main-nav{ display:block !important; }
+	
+}	
+   
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/****Ipad Portrait 768 Container 750 ****/ 
+	
+}
+
+@media only screen and (max-width: 767px) {
+	/****Mobile Landscape 480 Container 100% ****/
+	
+}
+
+@media only screen and (max-width: 479px) {
+	/****Mobile Portrait 320 ****/
+	
 }
