@@ -47,10 +47,10 @@
         <h1 class="we-create animated fadeInDown delay-07s">
         	We ship intricately crafted graphic & digital designs.
         </h1>
-        <figure class="waves">
+        <a class="link animated fadeInUp delay-1s" href="#" style="margin: 50px 0 -50px;">Surprise Me</a>
+        <figure class="waves" style="padding-bottom:50px;">
             <img src="img/zigzag.svg" alt="waves"/>
         </figure>
-            <a class="link animated fadeInUp delay-1s" href="#">Surprise Me</a>
     </div>
 </header><!--header-end-->
 
@@ -119,11 +119,15 @@
     <div class="row">
         <div class="col-lg-8 col-sm-8 wow fadeInUp delay-01s">
             <div class="form">
-                <input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                <input class="input-text" type="text" name="" value="Subject *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                <textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                <input class="input-btn" type="submit" value="SET SAIL">
+                <form action="https://formspree.io/enquiries@weareship.co" method="POST">
+                    <input class="input-text" type="text" name="name" placeholder="Your Name *" onfocus="this.placeholder='';" onblur="if(this.value=='')this.placeholder='Your Name *';" required/>
+                    <input class="input-text" type="email" name="_replyto" placeholder="Your E-mail *" onfocus="this.placeholder='';" onblur="if(this.value=='')this.placeholder='Your E-mail *';" required/>
+                    <input class="input-text" type="text" name="subject" placeholder="Subject *" onfocus="this.placeholder='';" onblur="if(this.value=='')this.placeholder='Subject *';" required>
+                    <textarea name="message" class="input-text text-area" cols="0" rows="0" placeholder="Your Message *" onfocus="this.placeholder='';" onblur="if(this.value=='')this.placeholder='Your Message *';" required></textarea>
+                    <input type="hidden" name="_next" value="//weareship.co/" />
+                    <input type="hidden" name="_subject" value="New submission on weareship.co!" /><input type="text" name="_gotcha" style="display:none" />
+                    <input class="input-btn" type="submit" value="SET SAIL">
+                </form>
             </div>	
         </div>
         <div class="col-lg-4 col-sm-4 wow fadeInLeft">
@@ -221,6 +225,34 @@ for(var i = 0; i < waveCount; i++){
 }
 
 ocean.appendChild(docFrag);    
+</script>
+<script>
+	$(window).load(function(){
+        var leftMargin = document.getElementsByClassName('container')[0].offsetLeft;
+        $('.portfolioContainer').css({
+            'margin-left':leftMargin+10,
+            'margin-right': leftMargin+10,
+        });
+        var portfolioContainerWidth = $('.portfolioContainer').width();   
+        var portfolioBoxWidth = (portfolioContainerWidth - 30)/3;
+        $('.Portfolio-box').css({
+            'width': portfolioBoxWidth,
+            'padding': '2px 4px',
+        });
+        $( window ).resize(function() {
+            var leftMargin = document.getElementsByClassName('container')[0].offsetLeft;
+            $('.portfolioContainer').css({
+                'margin-left':leftMargin+10,
+                'margin-right': leftMargin+10,
+            });
+            var portfolioContainerWidth = $('.portfolioContainer').width();   
+            var portfolioBoxWidth = (portfolioContainerWidth - 30)/3;
+            $('.Portfolio-box').css({
+                'width': portfolioBoxWidth,
+                'padding': '2px 4px',
+            });
+        });
+	})
 </script>
 </body>
 </html>
