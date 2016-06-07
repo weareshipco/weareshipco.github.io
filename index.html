@@ -234,23 +234,27 @@ ocean.appendChild(docFrag);
             'margin-right': leftMargin+10,
         });
         var portfolioContainerWidth = $('.portfolioContainer').width();   
-        var portfolioBoxWidth = (portfolioContainerWidth - 30)/3;
-        $('.Portfolio-box').css({
-            'width': portfolioBoxWidth,
-            'padding': '2px 4px',
-        });
+        if (portfolioContainerWidth > 480) {
+            var portfolioBoxWidth = (portfolioContainerWidth - 30)/3;
+            $('.Portfolio-box').css({
+                'width': portfolioBoxWidth,
+                'padding': '2px 4px',
+            });
+        }
         $( window ).resize(function() {
             var leftMargin = document.getElementsByClassName('container')[0].offsetLeft;
             $('.portfolioContainer').css({
                 'margin-left':leftMargin+10,
                 'margin-right': leftMargin+10,
             });
-            var portfolioContainerWidth = $('.portfolioContainer').width();   
-            var portfolioBoxWidth = (portfolioContainerWidth - 30)/3;
-            $('.Portfolio-box').css({
-                'width': portfolioBoxWidth,
-                'padding': '2px 4px',
-            });
+            var portfolioContainerWidth = $('.portfolioContainer').width();
+            if (portfolioContainerWidth > 480) {
+                var portfolioBoxWidth = (portfolioContainerWidth - 30)/3;
+                $('.Portfolio-box').css({
+                    'width': portfolioBoxWidth,
+                    'padding': '2px 4px',
+                });
+            }
         });
 	})
 </script>
