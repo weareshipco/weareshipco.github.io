@@ -61,7 +61,6 @@ h2{
 	letter-spacing: 0.2px;
 	margin:0 0 15px 0;
 	text-align:center;
-	text-transform:uppercase;
 }
 h3{
 	font-family: 'Poppins', sans-serif;
@@ -296,6 +295,11 @@ img {
 	letter-spacing: 0px;
     line-height: 1.4;
 	color:#7d7d7d;
+}
+
+span.shipco-text {
+    font-size: inherit;
+    font-weight: bold;
 }
 
 /* Contact
@@ -627,4 +631,71 @@ textarea {
     width: 320px;
     }
 	
+}
+
+/* == Portfolio Modal == */ 
+
+.portfolio-modal .modal-content {
+    padding: 15px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content .left-align {
+    text-align: left;
+}
+
+.portfolio-modal .modal-content h2 {
+    font-size: 40px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+    color: #444;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
+
+.portfolio-modal .modal-content ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.portfolio-modal .modal-content ul {
+    padding: 0;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
 }
