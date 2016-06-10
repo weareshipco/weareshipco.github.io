@@ -240,11 +240,10 @@ span.shipco {
 
 .Portfolio-box{
 	margin-bottom:0;
-	height:auto;
-	width:calc((97%)/3);
 	overflow:hidden;
 	display: inline-block;
 	padding:0 0.5%;
+    overflow: hidden;
 }
 
 .Portfolio-box img {
