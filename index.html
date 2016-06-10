@@ -117,7 +117,7 @@
         Do you have an exciting project brewing in your mind or  looking to join our fantastic crew? Drop us a line, set sail with us!
     </h1>
     <div class="row">
-        <div class="col-lg-8 col-sm-8 wow fadeInUp delay-01s">
+        <div class="wow fadeInUp delay-01s">
             <div class="form">
                 <form action="https://formspree.io/enquiries@weareship.co" method="POST">
                     <input class="input-text" type="text" name="name" placeholder="Your Name *" onfocus="this.placeholder='';" onblur="if(this.value=='')this.placeholder='Your Name *';" required/>
@@ -129,8 +129,6 @@
                     <input class="input-btn" type="submit" value="SET SAIL">
                 </form>
             </div>	
-        </div>
-        <div class="col-lg-4 col-sm-4 wow fadeInLeft">
         </div>
     </div>
 </section>
@@ -214,7 +212,7 @@
         // make some waves.
         var ocean = document.getElementById("ocean"),
             waveWidth = 6,
-            waveCount = Math.floor((window.innerWidth+10)/waveWidth),
+            waveCount = Math.floor((window.innerWidth)/waveWidth),
             docFrag = document.createDocumentFragment();
 
         for(var i = 0; i < waveCount; i++){
