@@ -1,4 +1,5 @@
-![Shick.png]({{site.baseurl}}/img/proj/Shick.png)
+![Shick.png]({{site.baseurl}}/![Qiswah.png]({{site.baseurl}}/img/proj/Qiswah.png)
+)
 ## A New Post
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
